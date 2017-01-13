@@ -1,7 +1,13 @@
 
 
-
-<h1>Da Quest For Weed</h>
+<HTML>
+<head>
+	<title>Tha Adventure</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<div class="col-md-4 offset-md-4">
+<h1>Da Quest For Weed</h1>
 <?php
 	//checking if we already have asked for a name and gotten a reply wia det $_GET parameter
 	if ($_GET['player_name'] == NULL):
@@ -58,3 +64,5 @@
 	elseif ($_GET['page'] == 5):
 ?>
 <?php endif?>
+</div>
+</html>
