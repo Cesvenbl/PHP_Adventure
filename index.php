@@ -3,10 +3,12 @@
 
 <h1>Da Quest For Weed</h>
 <?php
+	//checking if we already have asked for a name and gotten a reply wia det $_GET parameter
 	if ($_GET['player_name'] == NULL):
 ?>
 <br>
 <br>
+<!--The form for asking after a name-->
 <form action="index.php">
 	<label>What tha fuck iz yo' name?</label>
 	<input type="text" name="player_name">
@@ -17,6 +19,7 @@
 <?php
 	elseif ($_GET['page'] == 1):
 ?>
+<!--The form that asks where the player wants to go-->
 <h2>Hello <? echo $_GET[player_name];?></h2>
 <p>Yo ass is now standin up in tha middle of a gangbangin' forest.</p>
 <form action="index.php">
@@ -37,6 +40,7 @@
 	<br>
 	<input type="submit" value="Send">
 </form>
+<!--The Results of where the player wants to go-->
 <?php
 	elseif ($_GET['page'] == 2):
 ?>
@@ -45,6 +49,8 @@
 <?php
 	elseif ($_GET['page'] == 3):
 ?>
+<h2>oh you went to tha northside</h2>
+<p></p>
 <?php
 	elseif ($_GET['page'] == 4):
 ?>
