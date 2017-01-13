@@ -5,9 +5,10 @@
 	<title>Tha Adventure</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 	<body background="img/Forest.jpg">
-		<div class="col-md-5 offset-md-3">
+		<div class="col-md-5 offset-md-3 whitememezman rounded">
 			<h1>Da Quest For Weed</h1>
 			<?php
 				//checking if we already have asked for a name and gotten a reply wia det $_GET parameter
