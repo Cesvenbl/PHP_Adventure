@@ -59,6 +59,10 @@
 					<br>
 					<h2>Oh you went ta tha westside</h2><br>
 					<p>i'm sorry ta rap but you fell tha fuck into tha handz of a mafia boss n' is now on yo' way ta tha slaughta house. Now You Dead</p>
+					<form>
+						<input type="hidden" name="page" value="1">
+						<input type="submit" value="Fine">
+					</form>
 					<?php
 						elseif ($_GET['page'] == 3):
 					?>
@@ -67,7 +71,7 @@
 					<p>this be tha wrong side of you hood no you be going back try to find da weed</p>
 					<form action="index.php">
 						<input type="hidden" name="page" value="1">
-						<input type="submit" name="Fine">
+						<input type="submit" value="Fine">
 					</form>
 					<?php
 						elseif ($_GET['page'] == 4):
@@ -88,6 +92,16 @@
 						<input type="submit" value="Send">
 					</form>
 					<br>
+					<?php 
+						elseif ($_GET['page'] == 5):  
+					?>
+					<h2>You went too the southside</h2>
+					<p>and fell into a hole.<br>
+					get rekt scrub</p>
+					<form>
+						<input type="hidden" name="page" value="1">
+						<input type="submit" value="Fine">
+					</form>
 					<!--elseifs about what box you choose and what form about what you want to do next-->
 					<?php
 						elseif ($_GET['box'] == 1):
@@ -119,24 +133,33 @@
 					<br>
 					The trap blew up and it almost got you. <br>As you turn around you se that the explosion blew up both boxes. <br>As you scream in pain you get knocked out and forget everything even your weed addiction</p>
 					<form>
-					<input type="hidden" name="page" value="1">
-					<input type="submit" name="Fine">
+						<input type="hidden" name="page" value="1">
+						<input type="submit" value="Fine">
 					</form>
 					<?php
 						elseif ($_GET['option'] == 1):
 					?>
 					<h2>You a millioner</h2>
 					<p>you now own the best things in the world.<br>But people is mad about you shit now you going to be assasinated</p>
+					<form>
+						<input type="hidden" name="page" value="1">
+						<input type="submit" value="Fine">
+					</form>
 					<?php
 						elseif ($_GET['option'] == 2):
 					?>
 					<h2>You Got High</h2>
 					<p>When you got high you triped on a rock and stabed yourself. <br>You Died </p>
+					<form>
+						<input type="hidden" name="page" value="1">
+						<input type="submit" value="Fine">
+					</form>
 					<?php
 						elseif ($_GET['option'] == 3):
 					?>
 					<h2>yah man</h2>
 					<p>You befriended Snoop Dog.<br>Now you got high amount of rep</p>
+					<h1>The End!</h1>
 				<?php endif?>
 			</div>	
 		</div>
