@@ -21,7 +21,7 @@
 						<label>What tha fuck iz yo' name?</label><br>
 						<input type="text" name="player_name">
 						<input type="hidden" name="page" value="1">
-						<input type="submit" value="send">
+						<input type="submit" value="Send">
 					</form>
 
 					<?php
@@ -30,25 +30,25 @@
 				<!--The form that asks where the player wants to go-->
 					<p>Hello <? echo $_GET[player_name];?></p>
 					<p>Yo ass is now standin up in tha middle of a gangbangin' forest.</p>
-						<form action="index.php">
-							<br>
-							<label>In what direction do you go?</label>
-							<br>
-							<input type="radio" name="page" value="2">
-							<label for="west">Go to tha Westside</label>
-							<br>
-							<input type="radio" name="page" value="3">
-							<label for="north">Go to tha Northside</label>
-							<br>
-							<input type="radio" name="page" value="4">
-							<label for="east">Go to tha Eastside</label>
-							<br>
-							<input type="radio" name="page" value="5">
-							<label for="south">Go to tha Southside</label>
-							<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
-							<br>
-							<input type="submit" value="Send">
-						</form>
+					<form action="index.php">
+						<br>
+						<label>In what direction do you go?</label>
+						<br>
+						<input type="radio" name="page" value="2">
+						<label for="west">Go to tha Westside </label>
+						<br>
+						<input type="radio" name="page" value="3">
+						<label for="north">Go to tha Northside</label>
+						<br>
+						<input type="radio" name="page" value="4">
+						<label for="east">Go to tha Eastside </label>
+						<br>
+						<input type="radio" name="page" value="5">
+						<label for="south">Go to tha Southside</label>
+						<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
+						<br>
+						<input type="submit" value="Send">
+					</form>
 					<!--The Results of where the player wants to go-->
 					<?php
 						elseif ($_GET['page'] == 2):
@@ -62,30 +62,63 @@
 					<br>
 					<h2>oh you went to tha northside</h2><br>
 					<p>this be tha wrong side of you hood no you be going back try to find da weed</p>
-					<input type="radio" name="page" value="1"><input type="submit" name="Okejs">
+					<form action="index.php">
+						<input type="hidden" name="page" value="1">
+						<input type="submit" name="Fine">
+					</form>
 					<?php
 						elseif ($_GET['page'] == 4):
 					?>
 					<h2>you went to tha eastside now you on tha right path</h2>
 					<p>this be tha right way it seems</p>
 					<form action="index.php">
-							<br>
-							<label>What box will you open?</label>
-							<br>
-							<input type="radio" name="box" value="1">
-							<label for="west">Go to tha Westside</label>
-							<br>
-							<input type="radio" name="page" value="2">
-							<label for="north">Go to tha Northside</label>
-							<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
-							<br>
-							<input type="submit" value="Send">
-						</form>
+						<br>
+						<label>What box will you open?</label>
+						<br>
+						<input type="radio" name="box" value="1">
+						<label for="box">Open box one</label>
+						<br>
+						<input type="radio" name="box" value="2">
+						<label for="box1">Open box two</label>
+						<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
+						<br>
+						<input type="submit" value="Send">
+					</form>
 					<br>
+					<!--elseifs about what box you choose and what form about what you want to do next-->
 					<?php
-						elseif ($_GET['page'] == 5):
+						elseif ($_GET['box'] == 1):
 					?>
+					<h2>Oh This was right box</h2>
+					<p>You found tha box of infinite weed</p>
+					<form action="index.php">
+						<br>
+						<label>What will you do?</label>
+						<br>
+						<input type="radio" name="option" value="1">
+						<label for="option1">Sell Weed and be a pimp</label>
+						<br>
+						<input type="radio" name="option">
+						<label for="option2">Smoke Weed</label>
+						<br>
+						<input type="radio" name="option">
+						<label for="option3">Do both of them duhuhuhu</label>
+						<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
+						<br>
+						<input type="submit" value="Send">
+					</form>
 					<br>
+					<?php 
+						elseif ($_GET['box'] == 2):
+					?>
+					<h2>This be tha wrong box</h2>
+					<p>it's a trap
+					<br>
+					The trap blew up and it almost got you. <br>As you turn around you se that the explosion blew up both boxes. <br>As you scream in pain you get knocked out and forget everything even your weed addiction</p>
+					<form>
+					<input type="hidden" name="page" value="1">
+					<input type="submit" name="Restart">
+					</form>
 				<?php endif?>
 			</div>	
 		</div>
