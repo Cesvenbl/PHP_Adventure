@@ -8,6 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head><!--the begining of the visible things-->
 	<body background="img/Forest.jpg">
+	<audio loop autoplay>
+		<source src="Sound/background.mp3" type="audio/mp3">
+	</audio>
 		<div class="col-md-4 offset-md-4 whitememezman rounded">
 			<div class="text-center">
 				<h1>Da Quest For Weed</h1>
@@ -98,10 +101,10 @@
 						<input type="radio" name="option" value="1">
 						<label for="option1">Sell Weed and be a pimp</label>
 						<br>
-						<input type="radio" name="option">
+						<input type="radio" name="option" value="2">
 						<label for="option2">Smoke Weed</label>
 						<br>
-						<input type="radio" name="option">
+						<input type="radio" name="option" value="3">
 						<label for="option3">Do both of them duhuhuhu</label>
 						<input type="hidden" name="player_name" value="<?=$_GET[player_name]?>">
 						<br>
@@ -117,8 +120,23 @@
 					The trap blew up and it almost got you. <br>As you turn around you se that the explosion blew up both boxes. <br>As you scream in pain you get knocked out and forget everything even your weed addiction</p>
 					<form>
 					<input type="hidden" name="page" value="1">
-					<input type="submit" name="Restart">
+					<input type="submit" name="Fine">
 					</form>
+					<?php
+						elseif ($_GET['option'] == 1):
+					?>
+					<h2>You a millioner</h2>
+					<p>you now own the best things in the world.<br>But people is mad about you shit now you going to be assasinated</p>
+					<?php
+						elseif ($_GET['option'] == 2):
+					?>
+					<h2>You Got High</h2>
+					<p>When you got high you triped on a rock and stabed yourself. <br>You Died </p>
+					<?php
+						elseif ($_GET['option'] == 3):
+					?>
+					<h2>yah man</h2>
+					<p>You befriended Snoop Dog.<br>Now you got high amount of rep</p>
 				<?php endif?>
 			</div>	
 		</div>
